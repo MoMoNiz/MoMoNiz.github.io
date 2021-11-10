@@ -337,8 +337,55 @@ setInterval("createtime()",250);
 
 <script src="/js/third-party/comments/livere.js"></script>
 
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"scale":0.9,"jsonPath":"/live2dw/assets/Violet.model.json"},"display":{"position":"left","width":435,"height":680,"hOffset":-80,"vOffset":-80},"mobile":{"show":false,"scale":0.5},"react":{"opacity":1}});</script></body>
+</body>
 </html>
 
 <!-- 页面点击小红心 -->
 <script type="text/javascript" src="/js/love.js"></script>
+
+<!-- Live2D -->
+<!-- https://github.com/LitStronger/live2d-moc3 -->
+<html >
+<head>
+    <meta charset="UTF-8">
+    <title>live2d-demo</title>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+
+    <!-- Live2DCubismCore -->
+    <script src="https://cdn.jsdelivr.net/gh/litstronger/live2d-moc3@master/js/frame/live2dcubismcore.min.js"></script>
+    <!-- Include Pixi. -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/4.6.1/pixi.min.js"></script>
+    <!-- Include Cubism Components. -->
+    <script src="https://cdn.jsdelivr.net/gh/litstronger/live2d-moc3@master/js/live2dcubismframework.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/litstronger/live2d-moc3@master/js/live2dcubismpixi.js"></script>
+    <!-- User's Script -->
+    <script src="https://cdn.jsdelivr.net/gh/litstronger/live2d-moc3@master/js/l2d.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/litstronger/live2d-moc3@master/js/main.js"></script>
+    <style>
+    </style>
+</head>
+<body>
+    <!-- Canvas -->
+    <div class="Canvas"  id="L2dCanvas"></div>
+    <script>
+    	/* 配置 */
+        var config = {
+            //width: window.innerWidth, /* 窗口宽度最大值 */
+            //height: window.innerHeight, /* 窗口高度最大值 */
+            width: 800, /* 宽度，单位为px */
+            height: 600, /* 长度，单位为px */
+            left: '1000px',   //模型到浏览器各边框的距离。选择两个即可定位
+            bottom: '-100px',
+            /*live2d模型资源库的路径*/
+            basePath: '/live2d',
+            /*角色模型对应的文件夹,即basePath下的文件夹*/
+            role: 'aierdeliqi_4', 
+            /*背景图片，可填入图片外链*/
+            //background: 'https://cdn.jsdelivr.net/gh/alg-wiki/AzurLaneL2DViewer@gh-pages/assets/bg/bg_church_jp.png',
+            /*透明度*/
+            opacity: 1  
+        }
+        var v = new Viewer(config); 
+    </script>
+</body>
+</html>

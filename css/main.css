@@ -2901,17 +2901,6 @@ mark.search-keyword {
     padding: 10px 12px;
   }
 }
-/*body {
-    background:url(https://i.loli.net/2021/11/08/QOyRGDzwEmP4S6b.jpg); // 可以是路径也可以是链接
-    background-repeat: no-repeat; // 不重复
-    background-attachment:fixed; // 固定住背景图片
-    background-position:50% 50%; // 图片位置：居中
-    background-size: 100% 100%; // 图片长宽扩充为100%
-    color: var(--text-color);
-    font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
-    font-size: 1em;
-    line-height: 2;
-}*/
 .index .post-body {
   text-align: center !important;
 }
@@ -2962,10 +2951,10 @@ body {
   }
 }
 .main-inner {
-  opacity: 0.95;
+  opacity: 0.9;
 }
 .sidebar {
-  opacity: 0.95;
+  opacity: 0.9;
 }
 @media (prefers-color-scheme: dark) {
   body .header-inner {
@@ -2979,9 +2968,6 @@ body {
 }
 .popup {
   opacity: 0.95;
-}
-.site-brand-container {
-  background-image: linear-gradient(356deg, #df2650, #e56948, #e8983b, #e7c223);
 }
 .main {
   margin: 8px auto 0;
