@@ -9,7 +9,7 @@ home:
   style: default           # default, detail
 
 # 页面标签的图标
-favicon: https://s2.loli.net/2024/05/01/w3H6agbVvYIp5SO.png    # Favicon 文件路径，相对于 /source 目录（若你的 Favicon 文件位于 /source/favicon.png 则填写 "/favicon.png"）
+favicon: https://s2.loli.net/2024/05/02/geGy3MZEKB8Dtwf.png    # Favicon 文件路径，相对于 /source 目录（若你的 Favicon 文件位于 /source/favicon.png 则填写 "/favicon.png"）
 
 # 横幅图片
 banner:
@@ -70,9 +70,9 @@ comment:
   twikoo:
     enable: true           # 是否启用 Twikoo 评论系统
     envID:  https://momoniz-twikoo.hf.space
-    #region:
-    #path: location.pathname
-    #lang:
+    region:
+    path: location.pathname
+    lang:
     # 详见 https://github.com/imaegoo/twikoo
 
 #分析
